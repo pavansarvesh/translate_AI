@@ -6,29 +6,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="upload-section">
-        <input type="file" id="pdfUpload" />
-        <div id="filePreview"></div>
-      </div>
-      <div class="chat-section">
-        <div id="chatMessages"></div>
-        <input
-          type="text"
-          id="chatInput"
-          placeholder="Type your message here..."
-        />
-        <button id="sendBtn">Send</button>
-      </div>
-      <div class="correction-section">
-        <input
-          type="text"
-          id="correctionInput"
-          placeholder="Enter corrected translation here..."
-        />
-        <button id="submitCorrectionBtn">Submit Correction</button>
-      </div>
-    </div>
     <script type="module">
       import { GoogleGenerativeAI } from 'https://esm.run/@google/generative-ai';
 
@@ -334,5 +311,28 @@
 
       window.addEventListener('load', () => new TanglishTranslator());
     </script>
+    <div class="container">
+      <div class="upload-section">
+        <input type="file" id="pdfUpload" />
+        <div id="filePreview"></div>
+      </div>
+      <div class="chat-section">
+        <div id="chatMessages"></div>
+        <input
+          type="text"
+          id="chatInput"
+          placeholder="Type your message here..."
+        />
+        <button id="sendBtn">Send</button>
+      </div>
+      <div class="correction-section">
+        <input
+          type="text"
+          id="correctionInput"
+          placeholder="Enter corrected translation here..."
+        />
+        <button id="submitCorrectionBtn">Submit Correction</button>
+      </div>
+    </div>
   </body>
 </html>
